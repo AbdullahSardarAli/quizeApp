@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="quiz-container">
+    <h2 id="question">Question will go here</h2>
+
+    <button onclick="checkAnswer(0)" id="btn0">Option 1</button>
+    <button onclick="checkAnswer(1)" id="btn1">Option 2</button>
+    <button onclick="checkAnswer(2)" id="btn2">Option 3</button>
+    <button onclick="checkAnswer(3)" id="btn3">Option 4</button>
+
+    <p>Score: <span id="score">0</span></p>
+    <p>Question <span id="qNum">1</span> of 5</p>
+
+    <div id="result">
+      <h3>Quiz Finished!</h3>
+      <p>Your Score: <span id="finalScore"></span></p>
+      <button onclick="restartQuiz()">Restart</button>
+    </div>
+  </div>
+
+  <script src="about.js"></script>
+</body>
+</html>
